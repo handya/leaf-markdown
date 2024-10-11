@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.7
 
 import PackageDescription
 
@@ -11,7 +11,7 @@ let package = Package(
         .library(name: "LeafMarkdown", targets: ["LeafMarkdown"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/handya/markdown.git", branch: "fix/xcode-16"),
+        .package(name: "SwiftMarkdown", url: "https://github.com/handya/markdown.git", branch: "fix/xcode-16"),
         .package(url: "https://github.com/vapor/leaf-kit.git", from: "1.3.1"),
     ],
     targets: [
